@@ -1,0 +1,117 @@
+html,
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('website-background-design-guide-768x492.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.head{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-35px)
+}
+h1{
+    color: #fff;
+}
+a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.tab{
+    margin-top: 210px;
+}
+input{
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+input:active{
+    border:none;
+}
+button{
+    background-color: lightblue;
+    color: #111;
+    
+    width: 205px;
+    height: 30px;
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+}
+#result{
+    color: #fff;
+    font-size: 32px;
+    display: flex;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.navbar-links{
+    display: flex;
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+i{
+    color: #fff;
+}
+/* sidenavbar */
+.side-navbar{
+    background-color: #111;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    transition: 1s;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+}
+.side-navbar-link a:hover{
+    text-decoration: underline;
+    
+}
+/* media query */
+
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+
+}

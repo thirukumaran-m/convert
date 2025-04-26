@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('oZCrvS.webp');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    color: #fff;
+    font-size: 20px;
+}
+.home{
+    width: 200px;
+    height: 80px;
+}
+.img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+i{
+    padding: 5px;
+    font-size: 30px;
+}
+.under-icon{
+    position: fixed;
+    bottom: 40px;
+    left: 45%;
+}
+#insta{
+    border-radius: 10px;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+#fb{
+    color: #1877f2;
+    background-color: #fff;
+    border-radius: 50%;
+}
+#link{
+    color: rgb(10, 102, 194);
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    color: #fff;
+}
+.side-navbar-link .side-navbar-link a{
+    text-decoration: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.navbar-links{
+    display: flex;
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+i{
+    color: #fff;
+}
+/* sidenavbar */
+.side-navbar{
+    background-color: #111;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    transition: 1s;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+}
+.side-navbar-link a:hover{
+    text-decoration: underline;
+    
+}
+/* media query */
+
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .box{
+        flex-wrap: wrap;
+    }
+}
